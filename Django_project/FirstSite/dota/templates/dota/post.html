@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{post.title}}</title>
+    <link   rel="stylesheet" href="../../static/dota/assets/css/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+<!--    <link rel="stylesheet" href="../../../static/dota/assets/css/bootstrap.min.css">-->
+    <!--    <script src="../../static/dota/assets/js/bootstrap.bundle.min.js"></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="icon" href="../../static/dota/assets/img/icon/dota-2-icon.png" type="image/x-icon">
+</head>
+<body>
+
+
+
+    <div class="container">
+
+
+<h1>{{post.title}}</h1>
+
+{% if post.photo %}
+<p><img class="img-article-left" style="width: 25%;" src="{{post.photo.url}}"></p>
+{% endif %}
+
+{{post.content|linebreaks}}
+    <div class="BuuTTon">
+        <a href="../../templates/dota/ourteam/our.html" class="button_back">Повернутись</a>
+    </div>
+        </div>
+
+
+
+<script src="../../static/dota/assets/js/nav.js"></script>
+</body>
+</html>
+
+

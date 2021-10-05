@@ -1,0 +1,31 @@
+@media screen and (max-width: 1700px) {
+    body{
+        width: 100%;
+    }
+    .header{
+        width: 100%;
+    }
+
+    .intro{
+        width: 100%;
+
+    }
+
+    .js-slider{
+        height: 30vh;
+    }
+
+    .text-text{
+        padding: 50px;
+    }
+
+    .map_play{
+        padding: 60px;
+    }
+    .container_table{
+        padding: 40px;
+    }
+    .back{
+        width: auto;
+    }
+}
