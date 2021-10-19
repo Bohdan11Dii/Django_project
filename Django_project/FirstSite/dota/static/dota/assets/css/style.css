@@ -4,75 +4,59 @@ body {
     font-size: 14px;
     color: black;
     overflow-x: hidden;
-
-
 }
-
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 .container {
-
     width: 100%;
     max-width: 1170px;
-
     margin: 0 auto;
 }
-
 .header {
     width: 1920px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-
 }
 .header_logo {
     color: white;
-
 }
-
 .header_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logotyp{
     width: 300px;
     height: 100px;
 }
-
 .nav {
     display: flex;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .cf:before,
 .cf:after {
     content: " ";
     display: table;
 }
-
 .cf:after {
     clear: both;
 }
-
 .cf {
     *zoom: 1;
 }
-
 .menu,
 .submenu {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 .menu {
     margin: 50px auto;
     width: 800px;
@@ -80,13 +64,11 @@ body {
     width: -webkit-fit-content;
     width: fit-content;
 }
-
 .menu > li {
     float: left;
     position: relative;
     transform: skewX(25deg);
 }
-
 .menu a {
     display: block;
     color: #fff;
@@ -101,12 +83,10 @@ body {
 .menu li:hover {
     background: darkred;
 }
-
 .menu > li > a {
     transform: skewX(-25deg);
     padding: 1em 2em;
 }
-
 .submenu {
     position: absolute;
     width: 200px;
@@ -114,16 +94,13 @@ body {
     transform: skewX(-25deg);
     transform-origin: left top;
 }
-
 .submenu li {
     position: relative;
     overflow: hidden;
 }
-
 .submenu > li > a {
     padding: 1em 2em;
 }
-
 .submenu > li::after {
     content: '';
     position: absolute;
@@ -132,15 +109,12 @@ body {
     width: 100%;
     box-shadow: 0 0 50px rgba(0, 0, 0, .9);
 }
-
 .submenu > li:nth-child(odd){
     transform: skewX(-25deg) translateX(0);
 }
-
 .submenu > li:nth-child(odd) > a {
     transform: skewX(25deg);
 }
-
 .submenu > li:nth-child(odd)::after {
     right: -50%;
     transform: skewX(-25deg) rotate(3deg);
@@ -148,32 +122,26 @@ body {
 .submenu > li:nth-child(even){
     transform: skewX(25deg) translateX(0);
 }
-
 .submenu > li:nth-child(even) > a {
     transform: skewX(-25deg);
 }
-
 .submenu > li:nth-child(even)::after {
     left: -50%;
     transform: skewX(25deg) rotate(3deg);
 }
-
 .submenu,
 .submenu li {
     opacity: 0;
     visibility: hidden;
 }
-
 .submenu li {
     transition: .2s ease transform;
 }
-
 .menu > li:hover .submenu,
 .menu > li:hover .submenu li {
     opacity: 1;
     visibility: visible;
 }
-
 .menu > li:hover .submenu li:nth-child(even){
     transform: skewX(25deg) translateX(15px);
 }
@@ -181,23 +149,19 @@ body {
 .menu > li:hover .submenu li:nth-child(odd){
     transform: skewX(-25deg) translateX(-15px);
 }
-
 .intro {
     position: relative;
     background-color: black;
-    height: 1080px;
+    height: 755px;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
-
-
 }
 .intro video {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 60%;
     width: auto;
     height: auto;
     z-index: 0;
@@ -206,11 +170,6 @@ body {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-
-
-
-
-
 .cont{
     background-color: white;
     height: 500px;
@@ -222,7 +181,6 @@ body {
     margin: 100px auto 100px auto;
     perspective: 1000px;
 }
-
 .carousel {
 
     position: absolute;
@@ -233,13 +191,12 @@ body {
 }
 
 .unselectable {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .carousel__face {
     position: absolute;
@@ -252,15 +209,11 @@ body {
     box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
     display: flex;
     color: white;
-
 }
-
 span {
     margin: auto;
     font-size: 2rem;
 }
-
-
 .carousel__face:nth-child(1) {
     background-image: url("https://1mvvi2mtud.a.trbcdn.net/in_dotaguide/uploads/2016/08/%D0%93%D0%B0%D0%B9%D0%B4-%D0%BD%D0%B0-%D0%90%D0%B1%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0.jpg");
     transform: rotateY(  0deg) translateZ(430px); }
@@ -289,8 +242,6 @@ span {
     background-image: url("https://dota2guru.ru/wp-content/uploads/2019/10/beastmasterdota2wallpaper4.png");
     transform: rotateY(320deg) translateZ(430px); }
 
-
-
 @keyframes rotate360 {
     from {
         transform: rotateY(0deg);
@@ -299,93 +250,58 @@ span {
         transform: rotateY(-360deg);
     }
 }
-
-
 .section {
     padding: 80px 0;
     background: linear-gradient(90deg, rgb(90, 5, 13), rgb(7, 7, 7));
 }
-
 .section_header {
     width: 100%;
     max-width: 950px;
     margin: 0 auto 80px;
-
     text-align: center;
-
 }
-
 .section_title {
     font-size: 30px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
 }
-
-
-
 .container_heroes {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 .herous_search {
     margin: 50px 50px;
 }
 
 .heroes_item {
     width: 256px;
-
-
 }
-
 .heroes_img {
     transition: transform .2s;
-
-
 }
-
 .heroes_img:hover{
     transform: scale(1.4);
     cursor: pointer;
     filter: drop-shadow(0 0 5rem #D4D11B);
-
-
-
-
 }
-
 .heroes_text {
     font-family: 'STIX Two Text', serif;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     z-index: 1;
-
-
-
-
 }
-
 .heroes_img:hover .heroes_text {
     display: block;
-
-
 }
-
-
-
-
-
 .search {
     margin-bottom: 70px;
     width: 100%;
     position: relative;
     display: flex;
 }
-
 .searchTerm {
     width: 100%;
     border: 3px solid black;
@@ -396,11 +312,9 @@ span {
     outline: none;
     color: darkred;
 }
-
 .searchTerm:focus{
     color: darkred;
 }
-
 .searchButton {
     width: 40px;
     height: 36px;
@@ -412,42 +326,29 @@ span {
     cursor: pointer;
     font-size: 20px;
 }
-
 .wrap{
     width: 30%;
     position: absolute;
-
     left: 80%;
     transform: translate(-50%, -50%);
 }
-
-
-
-
 .footer {
     height: 80px;
     background-color: black;
 }
-
 .privacy {
     color: white;
-
     text-align: center;
-
 }
-
 .game {
     color: white;
-
     text-transform: uppercase;
     text-align: center;
 }
-
 .navHamburger {
     display: none;
     margin: 35px 135px;
 }
-
 .mobNavOpen {
     position: fixed;
     display: flex;
@@ -460,8 +361,6 @@ span {
     z-index: 10;
     left: 0;
 }
-
-
 @media screen and (max-width: 1100px) {
     .menu {
         display: none;

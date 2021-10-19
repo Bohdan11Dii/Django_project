@@ -247,10 +247,13 @@ h2{
 }
 
 .BuuTTon{
-    text-align: right   ;
+    padding: 15px 0;
+    text-align: center;
+
 }
 .button_back{
-    font-size: 25px;
+    font-size: 30px;
+    color: greenyellow;
 
 
 }
@@ -260,4 +263,11 @@ h1{
     color: white;
     text-align: center;
 
+}
+.back {
+    z-index: -50;
+    position: fixed;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
 }
